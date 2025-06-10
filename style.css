@@ -12,6 +12,7 @@ body {
     text-align: center;
   }
   
+
   nav ul {
     list-style: none;
     padding: 0;
@@ -143,4 +144,65 @@ body {
     padding: 2px 6px;
     border-radius: 4px;
   }
-    
+
+  .recipe-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .recipe-card {
+    background-color: #fffaf5;
+    border: 2px solid #fcd5ce;
+    padding: 20px;
+    border-radius: 10px;
+    color: #4b3832;
+  }
+  
+  .recipe-card a {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 6px 15px;
+    background-color: #fbc4ab;
+    border-radius: 5px;
+    text-decoration: none;
+    color: #4b3832;
+  }
+
+  .season-sweets-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.sweet-card {
+  background-color: #fff0f5;
+  border: 2px solid #f8c8dc;
+  padding: 20px;
+  border-radius: 10px;
+  color: #4b3832;
+}
+
+.sweet-card a {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 6px 15px;
+  background-color: #fcd5ce;
+  border-radius: 5px;
+  text-decoration: none;
+  color: #4b3832;
+}
+
+.sweet-image {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  border-radius: 10px;
+  margin: 10px 0;
+}
