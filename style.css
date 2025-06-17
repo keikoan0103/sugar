@@ -12,6 +12,12 @@ body {
     text-align: center;
   }
   
+main{
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+  box-sizing: border-box;
+}
 
   nav ul {
     list-style: none;
@@ -44,7 +50,7 @@ body {
   }
   
   footer {
-    background-color: #fde2e4;
+    background-color: #fddde6;
     text-align: center;
     position:fixed;
     bottom: 0;
@@ -63,7 +69,7 @@ body {
   
   .emotion-card {
     background-color: #fff5f2;
-    border: 2px dashed #fbc4ab;
+    border: 2px dashed #fddde6;
     border-radius: 12px;
     width: 250px;
     padding: 20px;
@@ -78,7 +84,7 @@ body {
     display: inline-block;
     margin-top: 10px;
     padding: 5px 15px;
-    background-color: #fcd5ce;
+    background-color: #fddde6;
     border-radius: 5px;
     text-decoration: none;
     color: #4b3832;
@@ -93,38 +99,39 @@ body {
   }
   
   .season-card {
+     background-color: #fff5f2;
+    border: 2px dashed #fddde6;
+    border-radius: 12px;
     width: 250px;
     padding: 20px;
-    border-radius: 12px;
     text-align: center;
-    color: #4b3832;
   }
   
-  .spring {
-    background-color: #ffe4e1;
+  /*.spring {
+    background-color: #fddde6;
     border: 2px solid #f8c8dc;
   }
   
   .summer {
-    background-color: #e0f7fa;
-    border: 2px solid #81d4fa;
+    background-color: #fddde6;
+    border: 2px solid #f8c8dc;
   }
   
   .autumn {
-    background-color: #fff3e0;
-    border: 2px solid #ffcc80;
+    background-color: #fddde6;
+    border: 2px solid #f8c8dc;
   }
   
   .winter {
-    background-color: #ede7f6;
-    border: 2px solid #b39ddb;
-  }
+    background-color: #fddde6;
+    border: 2px solid #f8c8dc;
+  }*/
   
   .season-card a {
-    display: inline-block;
+     display: inline-block;
     margin-top: 10px;
-    padding: 6px 15px;
-    background-color: #fcd5ce;
+    padding: 5px 15px;
+    background-color: #fddde6;
     border-radius: 5px;
     text-decoration: none;
     color: #4b3832;
@@ -158,18 +165,19 @@ body {
   }
   
   .recipe-card {
-    background-color: #fffaf5;
-    border: 2px solid #fcd5ce;
+     background-color: #fff5f2;
+    border: 2px dashed #fddde6;
+    border-radius: 12px;
+    width: 250px;
     padding: 20px;
-    border-radius: 10px;
-    color: #4b3832;
+    text-align: center;
   }
   
   .recipe-card a {
     display: inline-block;
     margin-top: 10px;
-    padding: 6px 15px;
-    background-color: #fbc4ab;
+    padding: 5px 15px;
+    background-color: #fddde6;
     border-radius: 5px;
     text-decoration: none;
     color: #4b3832;
@@ -208,4 +216,18 @@ body {
   height: auto;
   border-radius: 10px;
   margin: 10px 0;
+}
+
+.feeling-page {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.recommend {
+  border: 2px solid #f7c7d6;
+  border-radius: 12px;
+  padding: 15px;
+  margin-bottom: 20px;
+  background-color: #fff0f5;
 }
