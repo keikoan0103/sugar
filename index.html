@@ -18,22 +18,41 @@
       </ul>
     </nav>
   </header>
+<main>
+  <h2>今日のおすすめ</h2>
+</main>
 
-  <main>
-    <h2>今日のおすすめ</h2>
-    <section class="card-list">
-      <div class="card">
-        <img src="cookie.jpg" alt="幸せクッキー">
-        <h3>幸せクッキー</h3>
-        <p>食べたら笑顔になれちゃう！</p>
-        <a href="recipe-cookie.html">レシピを見る</a>
-      </div>
-      <!-- 他のカードも追加OK -->
-    </section>
-  </main>
+  <div class="slideshow-container">
+  <div class="slide fade">
+    <img src="images/slide1.jpg" alt="スライド1">
+  </div>
+  <div class="slide fade">
+    <img src="images/slide2.jpg" alt="スライド2">
+  </div>
+  <div class="slide fade">
+    <img src="images/slide3.jpg" alt="スライド3">
+  </div>
+</div>
 
   <footer>
     <p>&copy; 2025 Sugar お菓子のレシピ</p>
   </footer>
+
+<script>
+let slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  const slides = document.getElementsByClassName("slide");
+  for (let i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) { slideIndex = 1 }
+  slides[slideIndex - 1].style.display = "block";
+  setTimeout(showSlides, 4000); // 4秒ごとに切り替え
+}
+</script>
+
 </body>
 </html>
