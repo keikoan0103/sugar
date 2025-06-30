@@ -52,8 +52,9 @@ main{
   footer {
     background-color: #fddde6;
     text-align: center;
-    position:fixed;
-    bottom: 0;
+    position:sticky;
+    /*bottom: 0;*/
+    top: 100vh;
     width: 100%;
     padding: 10px;
     font-size: 12px;
