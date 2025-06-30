@@ -6,12 +6,52 @@ body {
     color: #4b3832;
   }
   
-  header {
+  /*header {
     background-color: #fddde6;
     padding: 20px;
     text-align: center;
-  }
-  
+  }*/
+ 
+.header-flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* ← 中央寄せ */
+  padding: 30px 50px;
+  margin-top: 20px;
+  background-color: #fff8f0;
+  /*position: relative; ロゴを左寄せにするために必要 */
+}
+
+.logo-container {
+  margin-left: 40px;
+  /*position: absolute;
+  left: 20px;  ← ロゴを左に固定 */
+}
+
+.site-logo {
+  width: 200px;
+  height: auto;
+}
+
+.nav-menu ul {
+  list-style: none;
+  display: flex;
+  gap: 40px;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-menu a {
+  text-decoration: none;
+  font-weight: bold;
+  color: #4b3832;
+  font-size: 1rem;
+}
+
+.nav-menu a:hover {
+  text-decoration: underline;
+}
+
 main{
   max-width: 900px;
   margin: 0 auto;
@@ -50,7 +90,7 @@ main{
   }
   
   footer {
-    background-color: #fddde6;
+    background-color: #fff8f0;
     text-align: center;
     position:sticky;
     /*bottom: 0;*/
@@ -159,9 +199,16 @@ main{
     border-radius: 4px;
   }
 
+  .headline {
+  font-size: 1.3rem;  /* introより少し大きめ */
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
   .recipe-list {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     gap: 20px;
     padding: 20px;
     max-width: 800px;
