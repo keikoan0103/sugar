@@ -17,7 +17,7 @@ body {
   align-items: center;
   justify-content: space-between; /* ← 中央寄せ */
   padding: 30px 50px;
-  margin-top: 20px;
+  margin-top: 10px;
   background-color: #fff8f0;
   /*position: relative; ロゴを左寄せにするために必要 */
 }
