@@ -30,7 +30,6 @@
     <p class="intro headline">いちごの焼きドーナツの作り方</p>
     <img src="images/bdonuts.webp" alt="いちご焼きドーナツの写真" class="recipe-image">
     <p class="intro">甘酸っぱさと香ばしさが広がる、いちごの焼きドーナツ</p>
-
     <section>
       <h2>🍓 材料（シリコン型使用 6個分）</h2>
       <ul>
@@ -67,12 +66,26 @@
         <li>お好みでチョコをコーティングしても🙆‍♀️</li>
       </ol>
     </section>
-
-   
-
-    <p><a href="recipes.html">← レシピ一覧に戻る</a></p>
+    <a id="back-link" href="#">← 戻る</a>
   </main>
 
+  <script>
+    // URLパラメータを取得
+    const params = new URLSearchParams(window.location.search);
+    const from = params.get('from'); // "spring" or "recipe-list"
+
+    // 戻るリンクの要素を取得
+    const backLink = document.getElementById('back-link');
+
+    // 戻る先を設定
+    if (from === 'spring') {
+      backLink.href = 'spring-sweets.html';
+    } else if (from === 'recipes') {
+      backLink.href = 'recipes.html';
+    } else {
+      backLink.href = 'index.html'; // 何も指定されてなかったらトップへ
+    }
+  </script>
 
   <footer>
     <p>&copy; 2025 Sugar</p>
