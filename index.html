@@ -7,6 +7,27 @@
   <link rel="stylesheet" href="style.css">
 </head>
 
+<header>
+  <div class="header-container">
+    <a href="index.html" class="logo-link">
+      <img src="images/logo.png" alt="Sugarロゴ" class="logo">
+    </a>
+
+    <!-- ハンバーガーボタン -->
+    <button class="menu-btn" id="menu-btn">☰</button>
+
+    <!-- ナビメニュー -->
+    <nav class="nav" id="nav-menu">
+      <ul>
+        <li><a href="seasons.html">季節のスイーツ</a></li>
+        <li><a href="feelings.html">気持ちで選ぶ</a></li>
+        <li><a href="recipes.html">レシピ一覧</a></li>
+        <li><a href="about.html">このサイトについて</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
 <body>
   <header class="header-flex">
     <div class="logo-container">
@@ -17,7 +38,6 @@
 
   <nav class="nav-menu">
     <ul>
-      <li><a href="index.html">ホーム</a></li>
       <li><a href="about.html">このサイトについて</a></li>
         <li><a href="feelings.html">感情で選ぶ</a></li>
         <li><a href="seasons.html">季節で選ぶ</a></li>
@@ -60,6 +80,13 @@ function showSlides() {
   slides[slideIndex - 1].style.display = "block";
   setTimeout(showSlides, 4000); // 4秒ごとに切り替え
 }
+
+const menuBtn = document.getElementById('menu-btn');
+  const navMenu = document.querySelector('.nav ul');
+
+  menuBtn.addEventListener('click', () => {
+    navMenu.classList.toggle('show');
+  });
 </script>
 
 </body>
