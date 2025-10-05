@@ -11,7 +11,52 @@ body {
     padding: 20px;
     text-align: center;
   }*/
- 
+
+  * 共通 */
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+}
+
+/* ハンバーガーボタンのスタイル */
+.menu-btn {
+  display: none;
+  font-size: 28px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #4b3832;
+}
+
+.menu-btn {
+  display: none; /* PCでは非表示 */
+}
+
+/* スマホ表示時 */
+@media screen and (max-width: 768px) {
+  .nav ul {
+    display: none;
+    flex-direction: column;
+    background-color: #fffaf5;
+    position: absolute;
+    top: 70px;
+    right: 10px;
+    padding: 15px;
+    border: 2px solid #fcd5ce;
+    border-radius: 10px;
+  }
+
+  .nav ul.show {
+    display: flex;
+  }
+
+  .menu-btn {
+    display: block;
+  }
+}
+
 .header-flex {
   display: flex;
   align-items: center;
