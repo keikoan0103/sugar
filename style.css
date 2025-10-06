@@ -28,6 +28,7 @@ body {
   border: none;
   cursor: pointer;
   color: #4b3832;
+  margin-left: auto;
 }
 
 .menu-btn {
