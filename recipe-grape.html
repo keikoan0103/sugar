@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ぶどうのタルトのレシピ｜Sugar</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header class="header-flex">
+
+    <!-- ハンバーガーボタン -->
+    <button class="menu-btn" id="menu-btn">☰</button>
+    
+    <div class="logo-container">
+      <a href="index.html">
+        <img src="images/sugarr.png" alt="Sugarのロゴ" class="site-logo">
+      </a>
+    </div>
+
+  <nav class="nav-menu">
+    <ul>
+      <li><a href="about.html">このサイトについて</a></li>
+        <li><a href="feelings.html">感情で選ぶ</a></li>
+        <li><a href="seasons.html">季節で選ぶ</a></li>
+        <li><a href="recipes.html">レシピ一覧</a></li>
+    </ul>
+  </nav>
+</header>
+
+  <main class="recipe-page">
+    <p class="intro headline">ぶどうのタルトの作り方</p>
+    <img src="images/grape.webp" alt="ぶどうのタルトの写真" class="recipe-image">
+    <p class="intro">簡単にできるタルト</p>
+
+    <section>
+      <h2>🍇 材料（18cm タルト型）</h2>
+      <ul>
+        <li>ビスケット…100g </li>
+        <li>無塩バター…40g</li>
+        <li>ニップン めちゃラクカスタードクリームミックス…1袋</li>
+        <li>牛乳…100g</li>
+        <li>ぶどう…約10粒</li>
+        <li>マスカット…約20粒</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>🧁 作り方</h2>
+
+      <ol>
+        <li>ビスケットをジップロックに入れて粉々に砕く</li>
+        <li>溶かしたバターを加えてよく揉む</li>
+        <li>型に押し付けるように敷き詰め、冷蔵庫で30分以上冷やして固める</li>
+        <li>ボウルにカスタードミックスと冷たい牛乳を入れる</li>
+        <li>泡立て器でよく混ぜる</li>
+        <li>そのまま冷蔵庫で冷やしておく</li>
+        <li>固まったタルト台に、カスタードを流し入れて平らに広げる</li>
+        <li>ぶどうを洗って水気をよく拭き、並べる</li>
+        <li>冷蔵庫で1,2時間冷やしたら完成✨</li>
+      </ol>
+    </section>
+     <a id="back-link" href="sad-sweets.html">← 戻る</a>
+  </main>
+
+<script>
+    // URLパラメータを取得
+    const params = new URLSearchParams(window.location.search);
+    const from = params.get('from'); // "spring" or "recipe-list"
+
+    // 戻るリンクの要素を取得
+    const backLink = document.getElementById('back-link');
+
+    // 戻る先を設定
+    if (from === 'spring') {
+      backLink.href = 'spring-sweets.html';
+    } else if (from === 'recipes') {
+      backLink.href = 'recipes.html';
+    } else {
+      backLink.href = 'index.html'; // 何も指定されてなかったらトップへ
+    }
+  </script>
+
+
+  <footer>
+    <p>&copy; 2025 Sugar</p>
+  </footer>
+
+</body>
+</html>
