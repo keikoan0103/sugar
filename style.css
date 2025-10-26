@@ -20,43 +20,11 @@ body {
   padding: 15px 30px;
 }
 
-/* ハンバーガーボタンのスタイル */
-.menu-btn {
-  display: none;
-  font-size: 28px;
-  background: none;
-  border: none;
-  cursor: pointer;
-  color: #4b3832;
-  margin-left: auto;
-}
 
 .menu-btn {
   display: none; /* PCでは非表示 */
 }
 
-/* スマホ表示時 */
-@media screen and (max-width: 768px) {
-  .nav ul {
-    display: none;
-    flex-direction: column;
-    background-color: #fffaf5;
-    position: absolute;
-    top: 70px;
-    right: 10px;
-    padding: 15px;
-    border: 2px solid #fcd5ce;
-    border-radius: 10px;
-  }
-
-  .nav ul.show {
-    display: flex;
-  }
-
-  .menu-btn {
-    display: block;
-  }
-}
 
 .header-flex {
   display: flex;
@@ -362,6 +330,8 @@ main{
   box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
 
+
+
 .slideshow-container {
   /*position: relative;*/
   max-width: 600px;
@@ -388,3 +358,46 @@ main{
   from { opacity: 0.4 }
   to { opacity: 1 }
 }
+
+/* スマホ表示時 */
+@media screen and (max-width: 768px) {
+
+  /* ハンバーガーボタンのスタイル */
+   .menu-btn {
+   display: none;
+   font-size: 28px;
+   background: none;
+   border: none;
+   cursor: pointer;
+   color: #4b3832;
+   position: absolute;
+   top: 30px;
+   right: 30px;
+}
+
+  .nav-menu ul {
+    display: none;
+    flex-direction: column;
+    background-color: #fffaf5;
+    position: absolute;
+    top: 70px;
+    right: 10px;
+    padding: 15px;
+    border: 2px solid #fcd5ce;
+    border-radius: 10px;
+  }
+
+  .nav-menu ul.show {
+    display: flex;
+  }
+
+  .menu-btn {
+    display: block;
+  }
+
+  .logo-container{
+    margin-left: 0;
+  }
+
+}
+
