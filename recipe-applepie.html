@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>アップルパイのレシピ｜Sugar</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="header-flex">
+
+        <!-- ハンバーガーボタン -->
+    <button class="menu-btn" id="menu-btn">☰</button>
+    
+    <div class="logo-container">
+      <a href="index.html">
+        <img src="images/sugarr.png" alt="Sugarのロゴ" class="site-logo">
+      </a>
+    </div>
+
+  <nav class="nav-menu">
+    <ul>
+      <li><a href="about.html">このサイトについて</a></li>
+        <li><a href="feelings.html">感情で選ぶ</a></li>
+        <li><a href="seasons.html">季節で選ぶ</a></li>
+        <li><a href="recipes.html">レシピ一覧</a></li>
+    </ul>
+  </nav>
+</header>
+
+  <main class="recipe-page">
+    <p class="intro headline">アップルパイの作り方</p>
+    <img src="images/applepie.webp" alt="アップルパイの写真" class="recipe-image">
+    <p class="intro">パイシートで簡単アップルパイ</p>
+
+    <section>
+      <h2>🍎 材料（6個分）</h2>
+      <ul>
+        <li>冷凍パイシート…2枚 </li>
+        <li>りんご…1個</li>
+        <li>砂糖…大さじ2</li>
+        <li>バター…10g</li>
+        <li>シナモン…少々（お好み）</li>
+        <li>卵黄…1個</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>🧁 作り方</h2>
+
+      <ol>
+        <li>りんごの皮をむいて1センチ角に切る</li>
+        <li>小鍋にバターを溶かし、りんご・砂糖・シナモンを加えて炒める</li>
+        <li>りんごがしんなりして水分がほぼなくなるまで加熱する</li>
+        <li>覚ましておく</li>
+        <li>パイシートを少し解凍して、めん棒で伸ばす</li>
+        <li>1枚を3等分にして切る</li>
+        <li>上になるパイシートにはナイフで9個切れ目を入れる</li>
+        <li>下になるパイシートにはフォークで数ヶ所穴を空け、りんごをのせる</li>
+        <li>上のパイシートを被せて、フォークで周りをしっかり押さえて閉じる</li>
+        <li>表面に卵黄を塗る</li>
+        <li>クッキングシートを敷いた天板に並べて、200℃のオーブンで20~25分焼いたら完成✨</li>
+
+      </ol>
+    </section>
+     <a id="back-link" href="autumn-sweets.html">← 戻る</a>
+  </main>
+
+<script>
+    // URLパラメータを取得
+    const params = new URLSearchParams(window.location.search);
+    const from = params.get('from'); // "spring" or "recipe-list"
+
+    // 戻るリンクの要素を取得
+    const backLink = document.getElementById('back-link');
+
+    // 戻る先を設定
+    if (from === 'sad') {
+      backLink.href = 'sad-sweets.html';
+    } else if (from === 'recipes') {
+      backLink.href = 'recipes.html';
+    } else {
+      backLink.href = 'index.html'; // 何も指定されてなかったらトップへ
+    }
+  </script>
+
+
+  <footer>
+    <p>&copy; 2025 Sugar</p>
+  </footer>
+
+</body>
+</html>
