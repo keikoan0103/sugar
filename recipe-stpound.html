@@ -3,12 +3,16 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>いちご焼きドーナツのレシピ｜Sugar</title>
+  <title>いちごパウンドケーキのレシピ｜Sugar</title>
   <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
   <header class="header-flex">
+
+    <!-- ハンバーガーボタン -->
+    <button class="menu-btn" id="menu-btn">☰</button>
+    
     <div class="logo-container">
       <a href="index.html">
         <img src="images/sugarr.png" alt="Sugarのロゴ" class="site-logo">
@@ -26,11 +30,65 @@
 </header>
 
   <main class="recipe-page">
-    <img src="images/recipe.stpound.jpg" alt="いちごのパウンドケーキの写真" class="recipe-image">
+    <p class="intro headline">いちごパウンドケーキの作り方</p>
+    <img src="images/stpound.webp" alt="いちごのパウンドケーキの写真" class="recipe-image">
+    <p class="intro">ピンクでかわいいパウンドケーキ</p>
 
-  
-  <!-- 以下に材料・作り方など続けていく -->
+   <section>
+      <h2>🍓 材料（18cm パウンドケーキ型）</h2>
+      <ul>
+        <li>無塩バター…70g </li>
+        <li>砂糖…60g</li>
+        <li>卵…1個</li>
+        <li>いちご…約70g</li>
+        <li>薄力粉…70g</li>
+        <li>ベーキングパウダー…小さじ2分の1</li>
+        <li>レモン汁…小さじ1</li>
+        <li>食紅（あれば）…ごく少量</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>🧁 作り方</h2>
+
+      <ol>
+        <li>オーブンを170℃に予熱</li>
+        <li>小鍋にいちごを入れて火にかける
+           →弱火〜中火で、へらで軽く潰しながら煮る
+        </li>
+        <li>レモン汁・砂糖を加える</li>
+        <li>水分を少し飛ばすように煮詰める</li>
+        <li>滑らかにしたいときは裏漉ししてピュレ状にする</li>
+        <li>ボウルにバターを入れてクリーム状にし、砂糖を加えて白っぽくなるまでよく混ぜる</li>
+        <li>卵を少しずつ加え、その都度よく混ぜる</li>
+        <li>いちごピュレを加え、全体に馴染むまで混ぜる
+           →色が薄い場合は食紅をほんの少し加える
+        </li>
+        <li>ふるった薄力粉とベーキングパウダーを加え、ゴムベラでさっくり混ぜる</li>
+        <li>生地を型に流し、170℃で約40~45分焼く</li>
+        <li>竹串を刺して、生地が付いてこなければ完成✨</li>
+      </ol>
+    </section>
+     x<a id="back-link" href="#">← 戻る</a>
   </main>
+
+<script>
+    // URLパラメータを取得
+    const params = new URLSearchParams(window.location.search);
+    const from = params.get('from'); // "spring" or "recipe-list"
+
+    // 戻るリンクの要素を取得
+    const backLink = document.getElementById('back-link');
+
+    // 戻る先を設定
+    if (from === 'spring') {
+      backLink.href = 'spring-sweets.html';
+    } else if (from === 'recipes') {
+      backLink.href = 'recipes.html';
+    } else {
+      backLink.href = 'index.html'; // 何も指定されてなかったらトップへ
+    }
+  </script>
 
   <footer>
     <p>&copy; 2025 Sugar</p>
