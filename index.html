@@ -7,42 +7,27 @@
   <link rel="stylesheet" href="style.css">
 </head>
 
-<header>
-  <div class="header-container">
-    <a href="index.html" class="logo-link">
-    </a>
-
-    <!-- ハンバーガーボタン -->
-    <button class="menu-btn" id="menu-btn">☰</button>
-
-    <!-- ナビメニュー -->
-    <nav class="nav" id="nav-menu">
-      <ul>
-        <li><a href="about.html">このサイトについて</a></li>
-        <li><a href="feelings.html">感情で選ぶ</a></li>
-        <li><a href="seasons.html">季節で選ぶ</a></li>
-        <li><a href="recipes.html">レシピ一覧</a></li>
-      </ul>
-    </nav>
-  </div>
-</header>
 
 <body>
   <header class="header-flex">
+
+     <!-- ハンバーガーボタン -->
+    <button class="menu-btn" id="menu-btn">☰</button>
+
     <div class="logo-container">
       <a href="index.html">
         <img src="images/sugarr.png" alt="Sugarのロゴ" class="site-logo">
       </a>
     </div>
 
-  <!--<nav class="nav-menu">
+<nav class="nav-menu">
     <ul>
       <li><a href="about.html">このサイトについて</a></li>
         <li><a href="feelings.html">感情で選ぶ</a></li>
         <li><a href="seasons.html">季節で選ぶ</a></li>
         <li><a href="recipes.html">レシピ一覧</a></li>
     </ul>
-  </nav>-->
+  </nav>
 </header>
 
 <main>
@@ -81,7 +66,7 @@ function showSlides() {
 }
 
 const menuBtn = document.getElementById('menu-btn');
-  const navMenu = document.querySelector('.nav ul');
+  const navMenu = document.querySelector('.nav-menu ul');
 
   menuBtn.addEventListener('click', () => {
     navMenu.classList.toggle('show');
