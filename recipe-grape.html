@@ -12,7 +12,7 @@
 
     <!-- ハンバーガーボタン -->
     <button class="menu-btn" id="menu-btn">☰</button>
-    
+
     <div class="logo-container">
       <a href="index.html">
         <img src="images/sugarr.png" alt="Sugarのロゴ" class="site-logo">
@@ -63,24 +63,6 @@
     </section>
      <a id="back-link" href="sad-sweets.html">← 戻る</a>
   </main>
-
-<script>
-    // URLパラメータを取得
-    const params = new URLSearchParams(window.location.search);
-    const from = params.get('from'); // "spring" or "recipe-list"
-
-    // 戻るリンクの要素を取得
-    const backLink = document.getElementById('back-link');
-
-    // 戻る先を設定
-    if (from === 'spring') {
-      backLink.href = 'spring-sweets.html';
-    } else if (from === 'recipes') {
-      backLink.href = 'recipes.html';
-    } else {
-      backLink.href = 'index.html'; // 何も指定されてなかったらトップへ
-    }
-  </script>
 
 
   <footer>
