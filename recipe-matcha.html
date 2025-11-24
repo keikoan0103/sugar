@@ -9,7 +9,7 @@
 
 <body>
   <header class="header-flex">
-    
+
     <!-- ハンバーガーボタン -->
     <button class="menu-btn" id="menu-btn">☰</button>
 
@@ -70,23 +70,6 @@
      x<a id="back-link" href="#">← 戻る</a>
   </main>
 
-<script>
-    // URLパラメータを取得
-    const params = new URLSearchParams(window.location.search);
-    const from = params.get('from'); // "spring" or "recipe-list"
-
-    // 戻るリンクの要素を取得
-    const backLink = document.getElementById('back-link');
-
-    // 戻る先を設定
-    if (from === 'spring') {
-      backLink.href = 'spring-sweets.html';
-    } else if (from === 'recipes') {
-      backLink.href = 'recipes.html';
-    } else {
-      backLink.href = 'index.html'; // 何も指定されてなかったらトップへ
-    }
-  </script>
 
 
   <footer>
