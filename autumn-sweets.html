@@ -4,6 +4,12 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>秋のお菓子 | Sugar お菓子のレシピ</title>
+
+    <!-- Google Fonts: M PLUS Rounded 1c -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@300;400;500;700&display=swap" rel="stylesheet">
+
   <link rel="stylesheet" href="style.css">
 </head>
 
@@ -12,7 +18,7 @@
 
     <!-- ハンバーガーボタン -->
     <button class="menu-btn" id="menu-btn">☰</button>
-    
+
     <div class="logo-container">
       <a href="index.html">
         <img src="images/sugarr.png" alt="Sugarのロゴ" class="site-logo">
@@ -21,10 +27,19 @@
 
   <nav class="nav-menu">
     <ul>
-      <li><a href="about.html">このサイトについて</a></li>
-        <li><a href="feelings.html">感情で選ぶ</a></li>
-        <li><a href="seasons.html">季節で選ぶ</a></li>
-        <li><a href="recipes.html">レシピ一覧</a></li>
+      <li><a href="about.html">About</a></li>
+
+      <li>
+      <a href="seasons.html">Season</a>
+      <ul>
+        <li><a href="spring-sweets.html">spring</a></li>
+        <li><a href="summer-sweets.html">summer</a></li>
+        <li><a href="autumn-sweets.html">autumn</a></li>
+        <li><a href="winter-sweets.html">winter</a></li>
+      </ul>
+    </li>
+
+    <li><a href="recipes.html">Recipe</a></li>
     </ul>
   </nav>
 </header>
@@ -36,24 +51,24 @@
 
     <section class="season-sweets-list">
       <article class="sweet-card">
-        <h3>アップルパイ</h3>
+        <h3>🍎 アップルパイ</h3>
         <img src="images/applepie.webp" alt="アップルパイの写真" class="sweet-image">
         <p>秋の定番スイーツ。</p>
-        <a href="recipe-applepie.html">レシピを見る</a>
+        <a href="recipe-applepie.html?from=autumn">レシピを見る</a>
       </article>
 
-      <!--<article class="sweet-card">
-        <h3>抹茶バスクチーズケーキ</h3>
-        <img src="images/matcha.webp" alt="抹茶バスクチーズケーキの写真" class="sweet-image">
-        <p>抹茶の香りがふわっと広がる、チーズケーキ。</p>
-        <a href="#">レシピ準備中</a>
-      </article>-->
+      <article class="sweet-card">
+        <h3>🍇 ぶどうのタルト</h3>
+        <img src="images/grape.webp" alt="ぶどうのタルトの写真" class="sweet-image">
+        <p>ぶどうとシャインマスカットを乗せた贅沢なタルト。</p>
+        <a href="recipe-grape.html?from=autumn">レシピを見る</a>
+      </article>
     </section>
-    <p><a href="seasons.html">← 季節で選ぶページに戻る</a></p>
+    <p><button class="back-btn" type="button" onclick="location.href='seasons.html'">← Seasonに戻る</button></p>
   </main>
 
   <footer>
-    <p>&copy; 2025 Sugar お菓子のレシピ</p>
+    <p>&copy; 2025 Sugar </p>
   </footer>
 </body>
 </html>
